@@ -1,0 +1,95 @@
+<!DOCTYPE html >
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>RSS Reader</title>
+
+	<link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="./bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="./bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">    
+    
+    <script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="./jquery/jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+			if (window.screen.width <= 1366){
+				$("#div_Main").width(document.documentElement.clientWidth);
+				$("#div_Main").height(document.documentElement.clientHeight);
+				$("#div_Top").width(document.documentElement.clientWidth);
+			}
+		});
+
+	</script>
+</head>
+<body>
+	<div id="div_Main" style="background-image: url(./resources/Background.jpg); ">
+		<div id="div_Top" style="background-color:black; height:50px; position:fixed">
+			<h4 style="color:white; margin-left:80px; margin-top:15px">RSS Reader - Welcome to join us!</h4>
+		</div>
+		<br/><br/><br/>   
+        
+       	<form  style="margin-left:180px; margin-top:15px">
+ 	 	
+  		  <legend>
+          <a href="#" class="btn disabled" type="button">请在下列关键词中选择您所感兴趣的关键字</a>
+          </legend>
+   			
+     		 <input type="checkbox" value="key1" style="margin-top:20px; margin-left:180px"> 
+             <a href="#" class="btn btn-small disabled" type="button" style="margin-top:20px;height:35px;width:70px;"><b>百度</b></a>
+    		
+          
+     		 <input type="checkbox" value="key2" style="margin-top:20px; margin-left:180px"> 
+             <a href="#" class="btn btn-small disabled" type="button" style="margin-top:20px;height:35px;width:70px;"><b>腾讯</b></a>
+    		
+         
+     		 <input type="checkbox" value="key3" style="margin-top:20px; margin-left:180px" > 
+             <a href="#" class="btn btn-small disabled" type="button" style="margin-top:20px;height:35px;width:70px;"><b>微软</b></a>
+    	
+     		 <input type="checkbox" value="key4" style="margin-top:20px; margin-left:180px" > 
+             <a href="#" class="btn btn-small disabled" type="button" style="margin-top:20px;height:35px;width:70px;"><b>苹果</b></a>
+    	
+           
+     		 <input type="checkbox" value="key5" style="margin-top:20px; margin-left:180px" > 
+              <a href="#" class="btn btn-small disabled" type="button" style="margin-top:20px;height:35px;width:70px;"><b>诺基亚</b></a>
+    		
+          
+     		 <input type="checkbox" value="key6" style="margin-top:20px; margin-left:180px"> 
+            <a href="#" class="btn btn-small disabled" type="button" style="margin-top:20px;height:35px;width:70px;"><b>大数据</b></a>
+    	
+           
+     		 <input type="checkbox" value="key7" style="margin-top:20px; margin-left:180px"> 
+             <a href="#" class="btn btn-small disabled" type="button" style="margin-top:20px;height:35px;width:70px;"><b>数据挖掘</b></a>
+             
+             <input type="checkbox" value="key8" style="margin-top:20px; margin-left:180px"> 
+             <a href="#" class="btn btn-small disabled" type="button" style="margin-top:20px;height:35px;width:70px;"><b>Bootstrap</b></a>
+             
+             <input type="checkbox" value="key9" style="margin-top:20px; margin-left:180px"> 
+             <a href="#" class="btn btn-small disabled" type="button" style="margin-top:20px;height:35px;width:70px;"><b>Web工程</b></a>
+             
+    	<input type="checkbox" value="key7" style="margin-top:20px; margin-left:180px"> 
+             <a href="#" class="btn btn-small disabled" type="button" style="margin-top:20px;height:35px;width:70px;"><b>UI设计</b></a>
+             
+             <input type="checkbox" value="key8" style="margin-top:20px; margin-left:180px"> 
+             <a href="#" class="btn btn-small disabled" type="button" style="margin-top:20px;height:35px;width:70px;"><b>人工智能</b></a>
+             
+             <input type="checkbox" value="key9" style="margin-top:20px; margin-left:180px"> 
+             <a href="#" class="btn btn-small disabled" type="button" style="margin-top:20px;height:35px;width:70px;"><b>谷歌</b></a>
+             
+  		<input type="checkbox" value="key7" style="margin-top:20px; margin-left:180px"> 
+             <a href="#" class="btn btn-small disabled" type="button" style="margin-top:20px;height:35px;width:70px;"><b>华为</b></a>
+             
+             <input type="checkbox" value="key8" style="margin-top:20px; margin-left:180px"> 
+             <a href="#" class="btn btn-small disabled" type="button" style="margin-top:20px;height:35px;width:70px;"><b>天翼</b></a>
+             
+             <input type="checkbox" value="key9" style="margin-top:20px; margin-left:180px"> 
+             <a href="#" class="btn btn-small disabled" type="button" style="margin-top:20px;height:35px;width:70px;"><b>Facebook</b></a>
+		</form>
+        
+		<button type="button" class="btn btn-large btn-success" style="margin-top:20px; margin-left:1000px" onClick="window.location.href='MainDisplay.html'"><b>提交</b></button>
+   		
+	</div>
+</body>
+</html>

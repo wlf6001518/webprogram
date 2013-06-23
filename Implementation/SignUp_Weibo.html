@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>RSS Reader</title>
-
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="./bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
@@ -14,6 +14,7 @@
 	<script type="text/javascript">
 
 		$(document).ready(function(){
+
 			if (window.screen.width <= 1366){
 				$("#div_Main").width(document.documentElement.clientWidth);
 				$("#div_Main").height(document.documentElement.clientHeight);
@@ -24,27 +25,23 @@
 	</script>
 </head>
 <body>
-	<div id="div_Main">
+
+	<div id="div_Main" style="background-image: url(./resources/Background.jpg); ">
 		<div id="div_Top" style="background-color:black; height:50px; position:fixed">
 			<h4 style="color:white; margin-left:80px; margin-top:15px">RSS Reader - Welcome to join us!</h4>
 		</div>
-		<button type="button" class="btn btn-primary disable" style="margin-top:100px; margin-left:80px">Technology</button>
-		<button type="button" class="btn" style="margin-top:100px; margin-left:10px">Nature</button>
-		<button type="button" class="btn" style="margin-top:100px; margin-left:10px">Life</button>
-		<button type="button" class="btn" style="margin-top:100px; margin-left:10px">Vista</button>
-		<button type="button" class="btn btn-primary disable" style="margin-top:100px; margin-left:10px">Art</button>
-		<button type="button" class="btn" style="margin-top:100px; margin-left:10px">Comic</button>
-		<br/>
+		<div class="btn-group">
+			<div style="width:1600px; height:800px">
 
-		<button type="button" class="btn btn-primary disable" style="margin-top:20px; margin-left:80px">Technology</button>
-		<button type="button" class="btn" style="margin-top:20px; margin-left:10px">Nature</button>
-		<button type="button" class="btn" style="margin-top:20px; margin-left:10px">Life</button>
-		<button type="button" class="btn" style="margin-top:20px; margin-left:10px">Vista</button>
-		<button type="button" class="btn btn-primary disable" style="margin-top:20px; margin-left:10px">Art</button>
-		<button type="button" class="btn" style="margin-top:20px; margin-left:10px">Comic</button>
-		<br/>
-
-		<button type="button" class="btn btn-large btn-success" style="margin-top:80px; margin-left:80px" onclick="window.location.href='MainDisplay.html'">Finish!</button>
+				<h3 style="color:white; margin-top:100px; margin-left:850px">Sign Up</h3>
+				<input type="text" placeholder="微博账号" style="margin-top:15px; margin-left:850px">
+				<br/>
+				<input type="password" placeholder="微博登陆密码" style="margin-top:15px; margin-left:850px">
+				<br/>
+				<div class="btn-group">
+					<button class="btn btn-primary btn-success" type="button" style="color:white; margin-top:15px; margin-left:850px" onclick="window.location.href='MainDisplay.html'">确认连接</button>	
+			</div>
+		</div>
 	</div>
 </body>
 </html>
